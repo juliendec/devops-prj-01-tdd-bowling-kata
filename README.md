@@ -6,8 +6,8 @@ Projet DevOps
 
 ### Prerequisites
 
-- [Node JS / NPM](https://nodejs.org/en/)
-- [Yarn (optional)](https://yarnpkg.com/)
+-   [Node JS / NPM](https://nodejs.org/en/)
+-   [Yarn (optional)](https://yarnpkg.com/)
 
 ### Installing
 
