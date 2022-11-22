@@ -1,0 +1,19 @@
+{
+  "name": "devops-prj-01-tdd-bowling-kata",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliendec/devops-prj-01-tdd-bowling-kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliendec/devops-prj-01-tdd-bowling-kata/issues"
+  },
+  "homepage": "https://github.com/juliendec/devops-prj-01-tdd-bowling-kata#readme"
+}
