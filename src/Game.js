@@ -14,4 +14,8 @@ module.exports = class Game {
         }
         return { error: 'Invalid credentials' }
     }
+
+    table() {
+      return this.rollArray
+  }
 }
