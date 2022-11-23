@@ -16,6 +16,6 @@ module.exports = class Game {
     }
 
     table() {
-      return this.rollArray
-  }
+        return this.rollArray
+    }
 }

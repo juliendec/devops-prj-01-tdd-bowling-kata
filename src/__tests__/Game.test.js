@@ -19,12 +19,12 @@ describe('Generate roll', () => {
         expect(result).toEqual({ error: 'Invalid credentials' })
     })
 
-    it ('', () => {
-      const instance = new kataBowling()
-      for (let index = 0; index < 12; index++) {
-        instance.roll(10)
-      }
-      const result = instance.table()
-      expect(result).toEqual([10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]) 
+    it('should succeed table', () => {
+        const instance = new kataBowling()
+        for (let index = 0; index < 12; index++) {
+            instance.roll(10)
+        }
+        const result = instance.table()
+        expect(result).toEqual([10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10])
     })
 })
