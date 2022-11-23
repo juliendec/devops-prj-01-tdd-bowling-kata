@@ -13,9 +13,9 @@ describe('Generate roll', () => {
     expect(result).toEqual(true)
   })
 
-  it('should succeed', () => {
+  it('should failed as no correct params', () => {
     const instance = new kataBowling()
-    const result = instance.score()
-    expect(result).toEqual('')
+    const result = instance.roll(-1)
+    expect(result).toEqual({ error: 'Invalid credentials'})
   })
 })

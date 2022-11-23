@@ -15,13 +15,4 @@ module.exports = class Game {
       return { error: 'Invalid credentials' }
     }
   
-    score () {
-      let text = ''
-      let numRoll = 1
-      for (const score of this.rollArray) {
-        text += 'roll n*' + numRoll + ' : ' + score + '\n'
-        numRoll++
-      }
-      return text
-    }
   }
