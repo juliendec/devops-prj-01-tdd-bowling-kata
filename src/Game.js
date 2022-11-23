@@ -2,9 +2,9 @@ module.exports = class Game {
     #rollArray
 
     constructor() {
-        this.rollArray = [];
-        this.score = 0;
-        this.currentIndex = 0;
+        this.rollArray = []
+        this.score = 0
+        this.currentIndex = 0
     }
 
     roll(hitPin) {
@@ -22,18 +22,30 @@ module.exports = class Game {
     }
 
     calculScore() {
-      for (let frame = 1; frame <= 10; frame++) {
-          if (this.rollArray[this.currentIndex] === 10) {
-              this.score += this.rollArray[this.currentIndex] + this.rollArray[this.currentIndex + 1] + this.rollArray[this.currentIndex + 2];
-              this.currentIndex++;
-          } else if (this.rollArray[this.currentIndex] + this.rollArray[this.currentIndex + 1] === 10) {
-              this.score += this.rollArray[this.currentIndex] + this.rollArray[this.currentIndex + 1] + this.rollArray[this.currentIndex + 2];
-              this.currentIndex = this.currentIndex + 2;
-          } else {
-              this.score += this.rollArray[this.currentIndex] + this.rollArray[this.currentIndex + 1];
-              this.currentIndex = this.currentIndex + 2;
-          }
-      }
-      return this.score;
-  }
+        for (let frame = 1; frame <= 10; frame++) {
+            if (this.rollArray[this.currentIndex] === 10) {
+                this.score +=
+                    this.rollArray[this.currentIndex] +
+                    this.rollArray[this.currentIndex + 1] +
+                    this.rollArray[this.currentIndex + 2]
+                this.currentIndex++
+            } else if (
+                this.rollArray[this.currentIndex] +
+                    this.rollArray[this.currentIndex + 1] ===
+                10
+            ) {
+                this.score +=
+                    this.rollArray[this.currentIndex] +
+                    this.rollArray[this.currentIndex + 1] +
+                    this.rollArray[this.currentIndex + 2]
+                this.currentIndex = this.currentIndex + 2
+            } else {
+                this.score +=
+                    this.rollArray[this.currentIndex] +
+                    this.rollArray[this.currentIndex + 1]
+                this.currentIndex = this.currentIndex + 2
+            }
+        }
+        return this.score
+    }
 }
